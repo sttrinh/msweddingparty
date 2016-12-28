@@ -1,0 +1,300 @@
+@font-face {
+  font-family: 'MightypeScript';
+  src: url('MightypeScript.otf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('images/pinkrice.png');
+  color: #545657;
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'MightypeScript';
+  text-align: center;
+}
+
+section {
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+@media (min-width: 0) {
+  .main-image {
+    background-image: url('images/loveliveshere-sm.jpg');
+    height: 240px;
+  }
+
+  .main-image:after {
+    font-size: 40px;
+  }
+
+  .bride-groom {
+    width: 100%;
+  }
+
+  .profile-card {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .pc-image {
+    width: 100%;
+    height: 225px;
+  }
+
+  .stephen {
+    background-image: url('images/stephen.jpg');
+  }
+
+  .michelle {
+    background-image: url('images/michelle.jpg');
+  }
+}
+
+@media (min-width: 330px) {
+  .profile-card {
+    width: initial;
+    margin: 0 8px;
+  }
+
+  .pc-image {
+    width: 300px;
+  }
+
+  .stephen {
+    background-image: url('images/stephen-sm.jpg');
+  }
+
+  .michelle {
+    background-image: url('images/michelle-sm.jpg');
+  }
+}
+
+@media (min-width: 400px) {
+  .main-image {
+    background-image: url('images/loveliveshere-md.jpg');
+    height: 320px;
+  }
+
+  .main-image:after {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 440px) {
+  .profile-card {
+    font-size: 24px;
+  }
+
+  .pc-image {
+    width: 400px;
+    height: 300px;
+  }
+
+  .stephen {
+    background-image: url('images/stephen.jpg');
+  }
+
+  .michelle {
+    background-image: url('images/michelle.jpg');
+  }
+}
+
+@media (min-width: 640px) {
+  .main-image {
+    height: 560px;
+  }
+
+  .main-image:after {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 660px) {
+  .bride-groom {
+    width: 660px;
+  }
+
+  .profile-card {
+    font-size: 18px;
+  }
+
+  .pc-image {
+    width: 300px;
+    height: 225px;
+  }
+
+  .bride-groom-1 {
+    float: left;
+  }
+
+  .bride-groom-2 {
+    float: right;
+  }
+
+  .stephen {
+    background-image: url('images/stephen-sm.jpg');
+  }
+
+  .michelle {
+    background-image: url('images/michelle-sm.jpg');
+  }
+}
+
+@media (min-width: 900px) {
+  .bride-groom {
+    width: 870px;
+  }
+
+  .profile-card {
+    font-size: 24px;
+  }
+
+  .pc-image {
+    width: 400px;
+    height: 300px;
+  }
+
+  .stephen {
+    background-image: url('images/stephen.jpg');
+  }
+
+  .michelle {
+    background-image: url('images/michelle.jpg');
+  }
+}
+
+@media (min-width: 980px) {
+  .main-image {
+    background-image: url('images/loveliveshere.jpg');
+    height: 640px;
+  }
+
+  .main-image:after {
+    font-size: 128px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .main-image {
+    height: 720px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .main-image {
+    height: 800px;
+  }
+}
+
+@media (min-width: 1840px) {
+  .main-image {
+    height: 880px;
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.chinese {
+  font-family: 'source-han-sans-traditional', 'Microsoft YaHei New', 'Microsoft Yahei', '微软雅黑', '宋体', 'SimSun', 'STXihei', '华文细黑';
+  font-weight: 100;
+}
+
+.main-image {
+  background-repeat: no-repeat;
+  background-position: center 80%;
+  background-size: cover;
+  text-align: center;
+}
+
+.main-image:after {
+  content: 'Michelle & Stephen';
+  position: relative;
+  top: 72%;
+  font-family: 'MightypeScript';
+  color: #F8EDE9;
+}
+
+.bride-groom {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile-card {
+  display: inline-block;
+  background-color: #FFFFFF;
+  padding: 7px;
+  margin-bottom: 40px;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.18);
+}
+
+.pc-image {
+  margin-bottom: 7px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-title {
+  font-family: 'MightypeScript';
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.image-browser {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.photo-section {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 650px;
+  padding: 0;
+}
+
+.photo-section:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.shade {
+  background-color: #B0A997;
+  opacity: 0.82;
+  height: 650px;
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.photo-content {
+  margin: 0 100px;
+}
+
+.photo-details {
+  position: relative;
+  height: 570px;
+  vertical-align: top;
+  font-size: 48px;
+  color: #F8EDE9;
+}
