@@ -1,8 +1,8 @@
 # msweddingparty
 
-## Start development
+### Start development
 npm install
 npm start
 
-## Building
+### Building
 npm run build
