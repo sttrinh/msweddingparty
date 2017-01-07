@@ -1,16 +1,45 @@
 @import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
+@media (min-width: 0) {
+  .image-gallery-thumbnail img {
+    height: 56px;
+  }
+}
+
+@media (min-width: 720px) {
+  .image-gallery-thumbnail img {
+    height: 80px;
+  }
+}
+
 .image-gallery-slide {
   background-color: rgba(255, 255, 255, 0);
+  transition: transform 0.15s ease-out !important;
+}
+
+.image-gallery-slide-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .image-gallery-slide img {
-  width: initial;
-  display: block;
-  margin: auto;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .image-gallery-thumbnail img {
+  display: flex;
   width: initial;
-  height: 80px;
+}
+
+.image-gallery-thumbnail.active img {
+  border-color: #DCC99C;
+}
+
+.image-gallery-fullscreen-button:hover::before,
+.image-gallery-play-button:hover::before,
+.image-gallery-left-nav:hover::before,
+.image-gallery-right-nav:hover::before {
+  color: #DCC99C;
 }

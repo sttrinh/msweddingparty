@@ -34,11 +34,20 @@ class App extends Component {
         <section id="photoSection" className="photo-section">
           <div className="shade"></div>
           <div className="photo-content">
-            <div className="photo-details left">
-              <h1>Pre-wedding shoot</h1>
-              <p></p>
+            <div className="photo-details">
+              <h1>Pre-wedding photos</h1>
+              <p>
+                We made a mini trip down to Tainan for
+                the pictures. Luckily the weather was not
+                too bad. It was a little tiring but we
+                definitely had a lot of fun!
+              </p>
+              <p className="chinese">
+                我們去台南拍婚紗. 天氣不錯.
+                有點累可是我們覺得很好玩!
+              </p>
             </div>
-            <div className="image-browser right">
+            <div className="image-browser">
               <ImageBrowser bgId="photoSection" />
             </div>
           </div>
