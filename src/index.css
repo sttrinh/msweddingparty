@@ -67,7 +67,7 @@ section {
   }
 
   .photo-section {
-    background-image: url('images/woodbg-sm.jpg');
+    background-image: url('images/woodbg-md.jpg');
   }
 }
 
@@ -98,10 +98,6 @@ section {
 
   .main-image:after {
     font-size: 48px;
-  }
-
-  .photo-section {
-    background-image: url('images/woodbg-md.jpg');
   }
 }
 
