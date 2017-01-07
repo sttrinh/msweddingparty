@@ -23,9 +23,9 @@ const images = [
     thumbnail: 'gallery/sm/IMG_0294.jpg'
   },
   {
-    original: 'gallery/lg/IMG_0357.png',
-    srcSet: 'gallery/md/IMG_0357.png 360w,'
-         + ' gallery/lg/IMG_0357.png 720w',
+    original: 'gallery/lg/IMG_0357.jpg',
+    srcSet: 'gallery/md/IMG_0357.jpg 360w,'
+         + ' gallery/lg/IMG_0357.jpg 720w',
     thumbnail: 'gallery/sm/IMG_0357.jpg'
   },
   {
@@ -41,21 +41,21 @@ const images = [
     thumbnail: 'gallery/sm/IMG_0538.jpg'
   },
   {
-    original: 'gallery/lg/IMG_0577.png',
-    srcSet: 'gallery/md/IMG_0577.png 360w,'
-         + ' gallery/lg/IMG_0577.png 720w',
+    original: 'gallery/lg/IMG_0577.jpg',
+    srcSet: 'gallery/md/IMG_0577.jpg 360w,'
+         + ' gallery/lg/IMG_0577.jpg 720w',
     thumbnail: 'gallery/sm/IMG_0577.jpg'
   },
   {
-    original: 'gallery/lg/IMG_0611.png',
-    srcSet: 'gallery/md/IMG_0611.png 360w,'
-         + ' gallery/lg/IMG_0611.png 720w',
+    original: 'gallery/lg/IMG_0611.jpg',
+    srcSet: 'gallery/md/IMG_0611.jpg 360w,'
+         + ' gallery/lg/IMG_0611.jpg 720w',
     thumbnail: 'gallery/sm/IMG_0611.jpg'
   },
   {
-    original: 'gallery/lg/IMG_0784.png',
-    srcSet: 'gallery/md/IMG_0784.png 360w,'
-         + ' gallery/lg/IMG_0784.png 720w',
+    original: 'gallery/lg/IMG_0784.jpg',
+    srcSet: 'gallery/md/IMG_0784.jpg 360w,'
+         + ' gallery/lg/IMG_0784.jpg 720w',
     thumbnail: 'gallery/sm/IMG_0784.jpg'
   }
 ];
