@@ -7,7 +7,7 @@ class App extends Component {
       <div>
         <section className="main-image">
         </section>
-        <section className="event-section">
+        <section>
             <div className="bride-groom">
                 <div className="bride-groom-1">
                   <div className="bg-title">Groom</div>
@@ -51,6 +51,34 @@ class App extends Component {
               <ImageBrowser bgId="photoSection" />
             </div>
           </div>
+        </section>
+        <section className="event-section">
+          <div className="event-shade"></div>
+          <div className="content">
+            <h1>Wedding Banquet</h1>
+            <div className="event-location">
+              <p className="content-big">Marriott Taipei</p>
+              <p className="content-small">
+                No. 199, Lequn 2nd Rd,<br />
+                Zhongshan District<br />
+                Taipei City, Taiwan<br />
+              </p>
+            </div>
+            <div className="event-location">
+              <p className="content-big chinese">台北萬豪酒店</p>
+              <div className="content-small chinese">
+                <p>
+                  台北市中山區樂群二路199號
+                </p>
+                <p>
+                  2017年 04月 15日<br />
+                  晚上 18:00
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="footer-section">
         </section>
       </div>
     );

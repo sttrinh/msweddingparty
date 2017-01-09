@@ -22,10 +22,13 @@ h1, h2, h3, h4, h5, h6 {
 
 section {
   overflow: hidden;
-  padding: 40px 0;
 }
 
 @media (min-width: 0) {
+  section {
+    padding: 20px 0;
+  }
+
   .main-image {
     background-image: url('images/loveliveshere-sm.jpg');
     height: 240px;
@@ -42,6 +45,7 @@ section {
   .profile-card {
     width: 100%;
     font-size: 18px;
+    margin-bottom: 20px;
   }
 
   .pc-image {
@@ -62,12 +66,22 @@ section {
     margin: 0 auto;
   }
 
-  .photo-details h1 {
+  .photo-details h1, .event-section h1 {
     font-size: 40px;
   }
 
   .photo-section {
     background-image: url('images/woodbg-md.jpg');
+  }
+
+  .event-section {
+    background-image: url('images/marriott-washed-360.jpg');
+    font-size: 16px;
+    padding: 0 0 20px 0;
+  }
+
+  .content-big {
+    font-size: 24px;
   }
 }
 
@@ -87,6 +101,10 @@ section {
 
   .michelle {
     background-image: url('images/michelle-sm.jpg');
+  }
+
+  .event-section {
+    background-image: url('images/marriott-washed-500.jpg');
   }
 }
 
@@ -119,8 +137,17 @@ section {
     background-image: url('images/michelle.jpg');
   }
 
-  .photo-details h1 {
+  .photo-details h1, .event-section h1 {
     font-size: 48px;
+  }
+
+  .event-section {
+    background-image: url('images/marriott-washed-original.jpg');
+    font-size: 20px;
+  }
+
+  .content-big {
+    font-size: 32px;
   }
 }
 
@@ -139,12 +166,17 @@ section {
 }
 
 @media (min-width: 660px) {
+  section {
+    padding: 40px 0;
+  }
+
   .bride-groom {
     width: 660px;
   }
 
   .profile-card {
     font-size: 18px;
+    margin-bottom: 40px;
   }
 
   .pc-image {
@@ -178,7 +210,7 @@ section {
     width: 720px;
   }
 
-  .photo-details h1 {
+  .photo-details h1, .event-section h1 {
     font-size: 72px;
   }
 }
@@ -223,9 +255,22 @@ section {
   .photo-section {
     background-image: url('images/woodbg.jpg');
   }
+
+  .event-section {
+    min-height: 600px;
+    font-size: 24px;
+  }
+
+  .event-location {
+    margin: 40px 0;
+  }
+
+  .content-big {
+    font-size: 48px;
+  }
 }
 
-@media (min-width: 1070px) {
+@media (min-width: 1074px) {
   .photo-details {
     float: left;
     width: 310px;
@@ -246,6 +291,10 @@ section {
   .photo-content {
     margin: 0 5%;
   }
+
+  .event-section {
+    min-height: 740px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -260,6 +309,11 @@ section {
 
   .photo-details h1 {
     font-size: 48px;
+  }
+
+  .event-section {
+    padding-top: 40px;
+    min-height: 800px;
   }
 }
 
@@ -280,6 +334,10 @@ section {
   .photo-details h1 {
     font-size: 64px;
   }
+
+  .event-section {
+    min-height: 880px;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -290,6 +348,14 @@ section {
   .photo-content {
     margin: 0 6%;
   }
+
+  .event-section {
+    min-height: 960px;
+  }
+
+  .event-location {
+    margin: 80px 0;
+  }
 }
 
 @media (min-width: 1840px) {
@@ -299,6 +365,14 @@ section {
 
   .photo-content {
     margin: 0 10%;
+  }
+
+  .event-section {
+    min-height: 1120px;
+  }
+
+  .event-location {
+    margin: 160px 0;
   }
 }
 
@@ -315,7 +389,7 @@ section {
 }
 
 .chinese {
-  font-family: 'source-han-sans-traditional', 'Microsoft YaHei New', 'Microsoft Yahei', '微软雅黑', '宋体', 'SimSun', 'STXihei', '华文细黑';
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif, 'source-han-sans-traditional', 'Microsoft YaHei New', 'Microsoft Yahei', '微软雅黑', '宋体', 'SimSun', 'STXihei', '华文细黑';
   font-weight: 100;
 }
 
@@ -379,17 +453,46 @@ section {
   z-index: -1;
 }
 
-.shade {
+.shade, .event-shade {
   background-color: #675961;
   opacity: 0.18;
-  height: 650px;
+  height: 100%;
   z-index: 0;
   position: absolute;
   width: 100%;
 }
 
-.photo-details {
+.event-shade {
+  background-color: #000000;
+  height: 100%;
+  opacity: 0.6;
+  top: 0;
+}
+
+.photo-details, .event-section {
   position: relative;
   color: #F8EDE9;
   font-weight: 300;
+}
+
+.event-section {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  font-weight: 300;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 0 4%;
+}
+
+.content p {
+  margin: 16px 0;
+}
+
+.footer-section {
+  min-height: 200px;
 }
