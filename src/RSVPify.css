@@ -1,0 +1,53 @@
+button {
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid #675241;
+  color: #675241;
+  padding: 10px 40px;
+  font-family: 'MightypeScript', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+@media (min-width: 0) {
+  #RSVPifyIFrameContainer {
+    height: 80px;
+  }
+
+  #RSVPifyIFrameContainer.hide-up {
+    height: 970px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 425px) {
+  #RSVPifyIFrameContainer.hide-up {
+    height: 960px;
+  }
+}
+
+@media (min-width: 768px) {
+  #RSVPifyIFrameContainer.hide-up {
+    height: 810px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #RSVPifyIFrameContainer.hide-up {
+    height: 810px;
+    width: 770px;
+    margin: -150px auto 0 auto;
+  }
+}
+
+#RSVPifyIFrameContainer {
+  position: relative;
+}
+
+.rsvp-form {
+  line-height: 80px;
+}
+
+.hide-up {
+  margin-top: -150px;
+}

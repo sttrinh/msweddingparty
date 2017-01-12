@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
 import './ImageBrowser.css';
 
-let bgId = null;
+//let bgId = null;
 const images = [
   {
     original: 'gallery/lg/IMG_0116.jpg',
@@ -61,6 +61,7 @@ const images = [
 ];
 
 class ImageBrowser extends Component {
+  /*
   constructor(props) {
     super(props);
     bgId = props.bgId;
@@ -71,13 +72,12 @@ class ImageBrowser extends Component {
   }
 
   _handleOnSlide(currentIndex) {
-    /*
     if (bgId) {
       document.getElementById(bgId).style.backgroundImage
         = 'url("' + images[currentIndex].original + '")';
     }
-    */
   }
+  */
 
   render() {
     return (

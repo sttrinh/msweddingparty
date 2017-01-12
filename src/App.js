@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ImageBrowser from './ImageBrowser';
+//import RSVPify from './RSVPify'
 
 class App extends Component {
   render() {
@@ -78,7 +79,18 @@ class App extends Component {
             </div>
           </div>
         </section>
+        {/*
+        <section className="rsvp-section">
+          <RSVPify />
+        </section>
+        */}
         <section className="footer-section">
+          <div className="footer-shade"></div>
+          <div className="mslogo">
+          </div>
+          <p className="footer-msg">
+            See you soon!
+          </p>
         </section>
       </div>
     );

@@ -22,12 +22,6 @@
   justify-content: center;
 }
 
-.image-gallery-slide img {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
 .image-gallery-thumbnail img {
   display: flex;
   width: initial;

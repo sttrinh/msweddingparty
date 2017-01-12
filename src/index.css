@@ -83,6 +83,21 @@ section {
   .content-big {
     font-size: 24px;
   }
+
+  .mslogo {
+    background-image: url('images/mslogo-brown-160.png');
+    height: 100px;
+    width: 100px;
+  }
+
+  .footer-section {
+    background-image: url('images/instax-425.jpg');
+  }
+
+  .footer-msg {
+    font-size: 20px;
+    margin: 0;
+  }
 }
 
 @media (min-width: 330px) {
@@ -116,6 +131,10 @@ section {
 
   .main-image:after {
     font-size: 48px;
+  }
+
+  .footer-section {
+    background-image: url('images/instax-768.jpg');
   }
 }
 
@@ -212,6 +231,21 @@ section {
 
   .photo-details h1, .event-section h1 {
     font-size: 72px;
+  }
+
+  .mslogo {
+    background-image: url('images/mslogo-brown-320.png');
+    height: 160px;
+    width: 160px;
+  }
+
+  .footer-msg {
+    font-size: 28px;
+    margin: 0;
+  }
+
+  .footer-section {
+    background-image: url('images/instax-1440.jpg');
   }
 }
 
@@ -338,6 +372,21 @@ section {
   .event-section {
     min-height: 880px;
   }
+
+  .mslogo {
+    background-image: url('images/mslogo-brown-640.png');
+    height: 200px;
+    width: 200px;
+  }
+
+  .footer-msg {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .footer-section {
+    background-image: url('images/instax.jpg');
+  }
 }
 
 @media (min-width: 1600px) {
@@ -389,7 +438,7 @@ section {
 }
 
 .chinese {
-  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif, 'source-han-sans-traditional', 'Microsoft YaHei New', 'Microsoft Yahei', '微软雅黑', '宋体', 'SimSun', 'STXihei', '华文细黑';
+  font-family: 'Open Sans', 'source-han-sans-traditional', 'Microsoft YaHei New', 'Microsoft Yahei', '微软雅黑', '宋体', 'SimSun', 'STXihei', '华文细黑';
   font-weight: 100;
 }
 
@@ -453,7 +502,7 @@ section {
   z-index: -1;
 }
 
-.shade, .event-shade {
+.shade, .event-shade, .footer-shade {
   background-color: #675961;
   opacity: 0.18;
   height: 100%;
@@ -462,11 +511,16 @@ section {
   width: 100%;
 }
 
-.event-shade {
+.event-shade, .footer-shade {
   background-color: #000000;
   height: 100%;
   opacity: 0.6;
   top: 0;
+}
+
+.footer-shade {
+  background-color: #FFFFFF;
+  opacity: 0.8;
 }
 
 .photo-details, .event-section {
@@ -493,6 +547,28 @@ section {
   margin: 16px 0;
 }
 
+.rsvp-section {
+  box-shadow: inset 0px 0px 16px 4px rgba(0,0,0,0.18)
+}
+
 .footer-section {
-  min-height: 200px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.mslogo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  position: relative;
+}
+
+.footer-msg {
+  position: relative;
+  text-align: center;
+  color: #675241;
+  font-family: 'MightypeScript';
 }
