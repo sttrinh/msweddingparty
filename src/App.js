@@ -3,6 +3,10 @@ import ImageBrowser from './ImageBrowser';
 //import RSVPify from './RSVPify'
 
 class App extends Component {
+  _handleRSVP() {
+    window.open("https://goo.gl/forms/YN32CrAo0cNjUmoi2");
+  }
+
   render() {
     return (
       <div>
@@ -79,11 +83,15 @@ class App extends Component {
             </div>
           </div>
         </section>
-        {/*
         <section className="rsvp-section">
-          <RSVPify />
+          {/* <RSVPify /> */}
+          <div className="center rsvp-form">
+            <button type="button" onClick={this._handleRSVP}>
+              <div>RSVP</div>
+              <div className="chinese">請您回覆</div>
+            </button>
+          </div>
         </section>
-        */}
         <section className="footer-section">
           <div className="footer-shade"></div>
           <div className="mslogo">

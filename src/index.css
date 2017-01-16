@@ -98,6 +98,17 @@ section {
     font-size: 20px;
     margin: 0;
   }
+
+  .rsvp-section button {
+    line-height: 1.2;
+    padding: 4px 24px;
+    font-size: 28px;
+  }
+
+  .rsvp-section .chinese {
+    font-size: 18px;
+    font-weight: 300;
+  }
 }
 
 @media (min-width: 330px) {
@@ -247,6 +258,17 @@ section {
   .footer-section {
     background-image: url('images/instax-1440.jpg');
   }
+
+  .rsvp-section button {
+    line-height: 1.2;
+    padding: 8px 24px;
+    font-size: 40px;
+  }
+
+  .rsvp-section .chinese {
+    font-size: 24px;
+    font-weight: 100;
+  }
 }
 
 @media (min-width: 900px) {
@@ -318,6 +340,15 @@ section {
 
   .image-browser {
     float: right;
+  }
+
+  .rsvp-section button {
+    padding: 10px 40px;
+    font-size: 48px;
+  }
+
+  .rsvp-section .chinese {
+    font-size: 32px;
   }
 }
 
@@ -571,4 +602,25 @@ section {
   text-align: center;
   color: #675241;
   font-family: 'MightypeScript';
+}
+
+.rsvp-section button {
+  vertical-align: middle;
+  background-color: transparent;
+  border: 2px solid #675241;
+  border-radius: 3px;
+  color: #675241;
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.rsvp-section .chinese {
+  padding: 0;
+}
+
+.rsvp-section button:hover {
+  background-color: #675241;
+  color: #FFFFFF;
 }
