@@ -109,6 +109,10 @@ section {
     font-size: 18px;
     font-weight: 300;
   }
+
+  .rsvp-msg.chinese {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 330px) {
@@ -550,7 +554,7 @@ section {
 }
 
 .footer-shade {
-  background-color: #FFFFFF;
+  background-color: #FFFAF4;
   opacity: 0.8;
 }
 
@@ -614,6 +618,7 @@ section {
   
   letter-spacing: 1px;
   cursor: pointer;
+  transition: 200ms;
 }
 
 .rsvp-section .chinese {
@@ -623,4 +628,9 @@ section {
 .rsvp-section button:hover {
   background-color: #675241;
   color: #FFFFFF;
+}
+
+.rsvp-msg.chinese {
+  margin-bottom: 0;
+  color: #675241;
 }

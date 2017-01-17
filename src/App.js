@@ -90,6 +90,10 @@ class App extends Component {
               <div>RSVP</div>
               <div className="chinese">請您回覆</div>
             </button>
+            <p className="chinese rsvp-msg">
+              Please RSVP before Feb 28<br />
+              請於2月28號前回覆是否出席
+            </p>
           </div>
         </section>
         <section className="footer-section">
