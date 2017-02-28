@@ -91,8 +91,8 @@ class App extends Component {
               <div className="chinese">請您回覆</div>
             </button>
             <p className="chinese rsvp-msg">
-              Please RSVP before Feb 28<br />
-              請於2月28號前回覆是否出席
+              Please RSVP before Mar 10<br />
+              請於3月10號前回覆是否出席
             </p>
           </div>
         </section>
