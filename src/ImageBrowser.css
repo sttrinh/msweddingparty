@@ -27,13 +27,24 @@
   width: initial;
 }
 
-.image-gallery-thumbnail.active img {
+.prewedding .image-gallery-thumbnail.active img {
   border-color: #DCC99C;
 }
 
-.image-gallery-fullscreen-button:hover::before,
-.image-gallery-play-button:hover::before,
-.image-gallery-left-nav:hover::before,
-.image-gallery-right-nav:hover::before {
+.prewedding .image-gallery-fullscreen-button:hover::before,
+.prewedding .image-gallery-play-button:hover::before,
+.prewedding .image-gallery-left-nav:hover::before,
+.prewedding .image-gallery-right-nav:hover::before {
   color: #DCC99C;
+}
+
+.wedding .image-gallery-thumbnail.active img {
+  border-color: #9A8D6D;
+}
+
+.wedding .image-gallery-fullscreen-button:hover::before,
+.wedding .image-gallery-play-button:hover::before,
+.wedding .image-gallery-left-nav:hover::before,
+.wedding .image-gallery-right-nav:hover::before {
+  color: #9A8D6D;
 }

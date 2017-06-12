@@ -74,8 +74,12 @@ section {
     background-image: url('images/woodbg-md.jpg');
   }
 
+  .wedding-photos {
+    background-image: url('images/naturalwhite-tinted.png');
+  }
+
   .event-section {
-    background-image: url('images/marriott-washed-360.jpg');
+    background-image: url('images/hotel-valencia-360.jpg');
     font-size: 16px;
     padding: 0 0 20px 0;
   }
@@ -134,7 +138,7 @@ section {
   }
 
   .event-section {
-    background-image: url('images/marriott-washed-500.jpg');
+    background-image: url('images/hotel-valencia-original.jpg');
   }
 }
 
@@ -176,7 +180,7 @@ section {
   }
 
   .event-section {
-    background-image: url('images/marriott-washed-original.jpg');
+    background-image: url('images/hotel-valencia-original.jpg');
     font-size: 20px;
   }
 
@@ -314,6 +318,10 @@ section {
 
   .photo-section {
     background-image: url('images/woodbg.jpg');
+  }
+
+  .wedding-photos {
+    background-image: url('images/naturalwhite-tinted.png');
   }
 
   .event-section {
@@ -537,6 +545,11 @@ section {
   z-index: -1;
 }
 
+.wedding-photos {
+  background-repeat: repeat;
+  background-size: initial;
+}
+
 .shade, .event-shade, .footer-shade {
   background-color: #675961;
   opacity: 0.18;
@@ -549,7 +562,7 @@ section {
 .event-shade, .footer-shade {
   background-color: #000000;
   height: 100%;
-  opacity: 0.6;
+  opacity: 0.48;
   top: 0;
 }
 
@@ -562,6 +575,10 @@ section {
   position: relative;
   color: #F8EDE9;
   font-weight: 300;
+}
+
+.wedding-photos .photo-details {
+  color: #4d4134;
 }
 
 .event-section {

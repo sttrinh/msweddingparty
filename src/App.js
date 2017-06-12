@@ -4,7 +4,7 @@ import ImageBrowser from './ImageBrowser';
 
 class App extends Component {
   _handleRSVP() {
-    window.open("https://goo.gl/forms/YN32CrAo0cNjUmoi2");
+    window.open("https://goo.gl/forms/IB40nfZWKaXamm2O2");
   }
 
   render() {
@@ -36,8 +36,7 @@ class App extends Component {
                 </div>
             </div>
         </section>
-        <section id="photoSection" className="photo-section">
-          <div className="shade"></div>
+        <section className="photo-section">
           <div className="photo-content">
             <div className="photo-details">
               <h1>Pre-wedding photos</h1>
@@ -53,7 +52,23 @@ class App extends Component {
               </p>
             </div>
             <div className="image-browser">
-              <ImageBrowser bgId="photoSection" />
+              <ImageBrowser album="prewedding" />
+            </div>
+          </div>
+        </section>
+        <section className="photo-section wedding-photos">
+          <div className="photo-content">
+            <div className="photo-details">
+              <h1>Wedding photos</h1>
+              <p>
+                We had an amazing time celebrating our wedding
+                in Taipei with our wonderful friends and family.
+                For such a big wedding in another country,
+                everything went surprising well!
+              </p>
+            </div>
+            <div className="image-browser">
+              <ImageBrowser album="wedding" />
             </div>
           </div>
         </section>
@@ -62,23 +77,17 @@ class App extends Component {
           <div className="content">
             <h1>Wedding Banquet</h1>
             <div className="event-location">
-              <p className="content-big">Marriott Taipei</p>
+              <p className="content-big">Cielo Wine Bar</p>
               <p className="content-small">
-                No. 199, Lequn 2nd Rd,<br />
-                Zhongshan District<br />
-                Taipei City, Taiwan<br />
+                Hotel Valencia, 7th Floor<br />
+                3055 Olin Ave #2100<br />
+                San Jose, CA 95128<br />
               </p>
             </div>
             <div className="event-location">
-              <p className="content-big chinese">台北萬豪酒店</p>
-              <div className="content-small chinese">
-                <p>
-                  台北市中山區樂群二路199號
-                </p>
-                <p>
-                  2017年 04月 15日<br />
-                  晚上 18:00
-                </p>
+              <div className="content-small">
+                <p className="content-big">August 12, 2017</p>
+                <p>Dinner @ 6:30 PM</p>
               </div>
             </div>
           </div>
@@ -91,8 +100,8 @@ class App extends Component {
               <div className="chinese">請您回覆</div>
             </button>
             <p className="chinese rsvp-msg">
-              Please RSVP before Mar 10<br />
-              請於3月10號前回覆是否出席
+              Please RSVP before Jun 30<br />
+              請於6月30號前回覆是否出席
             </p>
           </div>
         </section>
