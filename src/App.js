@@ -1,10 +1,23 @@
 import React, { Component } from 'react';
 import ImageBrowser from './ImageBrowser';
+import vidthumb from './images/video-thumb-360.jpg';
 //import RSVPify from './RSVPify'
 
 class App extends Component {
   _handleRSVP() {
     window.open("https://goo.gl/forms/IB40nfZWKaXamm2O2");
+  }
+
+  constructor(props) {
+    super(props);
+    this.state = {playVideo: false};
+    this.loadVideo = this.loadVideo.bind(this);
+  }
+
+  loadVideo() {
+    this.setState({
+      playVideo: true
+    });
   }
 
   render() {
@@ -66,6 +79,20 @@ class App extends Component {
                 For such a big wedding in another country,
                 everything went surprising well!
               </p>
+              <div className="youtube-player">
+                {!this.state.playVideo &&
+                  <div>
+                    <img src={vidthumb} />
+                    <div className="play" onClick={this.loadVideo}>
+                    </div>
+                  </div>
+                }
+                {this.state.playVideo &&
+                  <iframe src="https://www.youtube.com/embed/o5huWag4MCM?rel=0&amp;showinfo=0&amp;autoplay=1"
+                    allowFullScreen>
+                  </iframe>
+                }
+              </div>
             </div>
             <div className="image-browser">
               <ImageBrowser album="wedding" />
@@ -100,8 +127,8 @@ class App extends Component {
               <div className="chinese">請您回覆</div>
             </button>
             <p className="chinese rsvp-msg">
-              Please RSVP before Jun 30<br />
-              請於6月30號前回覆是否出席
+              Please RSVP before Jul 7<br />
+              請於7月7號前回覆是否出席
             </p>
           </div>
         </section>
