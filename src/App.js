@@ -1,23 +1,11 @@
 import React, { Component } from 'react';
 import ImageBrowser from './ImageBrowser';
-import vidthumb from './images/video-thumb-360.jpg';
+import VideoPlayer from './VideoPlayer';
 //import RSVPify from './RSVPify'
 
 class App extends Component {
   _handleRSVP() {
     window.open("https://goo.gl/forms/IB40nfZWKaXamm2O2");
-  }
-
-  constructor(props) {
-    super(props);
-    this.state = {playVideo: false};
-    this.loadVideo = this.loadVideo.bind(this);
-  }
-
-  loadVideo() {
-    this.setState({
-      playVideo: true
-    });
   }
 
   render() {
@@ -52,7 +40,7 @@ class App extends Component {
         <section className="photo-section">
           <div className="photo-content">
             <div className="photo-details">
-              <h1>Pre-wedding photos</h1>
+              <h1>Pre-wedding shoot</h1>
               <p>
                 We made a mini trip down to Tainan for
                 the pictures. Luckily the weather was not
@@ -72,27 +60,14 @@ class App extends Component {
         <section className="photo-section wedding-photos">
           <div className="photo-content">
             <div className="photo-details">
-              <h1>Wedding photos</h1>
+              <h1>Wedding day</h1>
               <p>
                 We had an amazing time celebrating our wedding
                 in Taipei with our wonderful friends and family.
                 For such a big wedding in another country,
                 everything went surprising well!
               </p>
-              <div className="youtube-player">
-                {!this.state.playVideo &&
-                  <div>
-                    <img src={vidthumb} />
-                    <div className="play" onClick={this.loadVideo}>
-                    </div>
-                  </div>
-                }
-                {this.state.playVideo &&
-                  <iframe src="https://www.youtube.com/embed/o5huWag4MCM?rel=0&amp;showinfo=0&amp;autoplay=1"
-                    allowFullScreen>
-                  </iframe>
-                }
-              </div>
+              <VideoPlayer />
             </div>
             <div className="image-browser">
               <ImageBrowser album="wedding" />

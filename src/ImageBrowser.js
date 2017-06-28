@@ -126,6 +126,12 @@ const weddingImages = [
     srcSet: 'gallery/md/1492361484457.jpg 360w,'
          + ' gallery/lg/1492361484457.jpg 720w',
     thumbnail: 'gallery/sm/1492361484457.jpg'
+  },
+  {
+    original: 'gallery/lg/football.jpg',
+    srcSet: 'gallery/md/football.jpg 360w,'
+         + ' gallery/lg/football.jpg 720w',
+    thumbnail: 'gallery/sm/football.jpg'
   }
 ];
 
